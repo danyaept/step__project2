@@ -1,0 +1,32 @@
+{
+  "name": "secod_hw_advances_lvl",
+  "version": "1.0.0",
+  "description": "second hw advances lvl html/css",
+  "main": "./src/scripts/index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/iamstolyarovdanya/2-hw-advanced-html-and-css.git"
+  },
+  "author": "Stoliarov Daniil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/iamstolyarovdanya/2-hw-advanced-html-and-css/issues"
+  },
+  "homepage": "https://gitlab.com/iamstolyarovdanya/2-hw-advanced-html-and-css#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.66.1"
+  },
+  "type": "module"
+}
