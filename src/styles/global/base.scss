@@ -51,15 +51,15 @@ a{
 }
 .container {
 	min-width: 320px;
-	max-width: 320px;
+	max-width: 340px;
     margin: 0 auto;
 	padding: 0 10px ;
 	@media screen and (min-width: 768px) {
-		max-width:  760px;
+		max-width:  780px;
 		
 	  }
 	  @media screen and (min-width: 1200px) {
-		max-width: 1170px;
+		max-width: 1190px;
 	  }
 	  
 }

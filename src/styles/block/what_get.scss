@@ -2,6 +2,11 @@
     padding-top: 61px;
     padding-bottom: 420px;
     position: relative;
+    background-color:  #F4F4F4;
+    @media screen and (min-width:$ui-breakpoint-xl){
+        padding-top: 94px;
+        padding-bottom: 77px;
+         }
 }
 .what_get__wrapper{
     @media screen and (min-width:$ui-breakpoint-xl){
@@ -91,6 +96,12 @@ line-height: 21px;
     }
 }
 .what_get_image{
+    display: flex;
+    flex-direction: column;
+justify-content: start;
+h2{
+    align-self: start;
+}
     img{
         width: calc(100% - 40px);
         height: 381px;
@@ -98,21 +109,36 @@ line-height: 21px;
         right: 0;
         bottom: 0;
         @media screen and (min-width:$ui-breakpoint-md){
-            width: calc(100% - 60px);
+           
+                }
+                @media screen and (min-width:$ui-breakpoint-xl){
+                    width: calc(50%);
+                    height: 450px;
+                    right: 0;
+                    bottom: 62px;
                 }
             }
-                @media screen and (min-width:$ui-breakpoint-xl){
-                    width: calc(50% - 0px);
-                    height: 487px;
-                    right: 0;
-                    bottom: 428px;
-                }
+            
     }
     .what_get__wrapper-contant{
-
         @media screen and (min-width:$ui-breakpoint-xl){
 display: flex;
-
+align-items: flex-start;
+justify-content: start;
                 }
             }
+    .what_get__md-hide{
+        
+        @media screen and (min-width:$ui-breakpoint-xl){
+         display: none;
+        }
     
+    }
+    .what_get__xl-hide{
+        display: none;
+       
+        @media screen and (min-width:$ui-breakpoint-xl){
+       display: block;
+        }
+    
+    }
