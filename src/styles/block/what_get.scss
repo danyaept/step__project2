@@ -1,6 +1,12 @@
 .what_get{
     padding-top: 61px;
-    padding-bottom: 64px;
+    padding-bottom: 420px;
+    position: relative;
+}
+.what_get__wrapper{
+    @media screen and (min-width:$ui-breakpoint-xl){
+width: 50%;
+    }
 }
 .what_get__title{
     color: #8D81AC;
@@ -11,6 +17,10 @@ font-weight: 700;
 line-height: 44px; /* 104.762% */
 text-align: center;
 margin-bottom: 36px;
+text-align: center;
+@media screen and (min-width:$ui-breakpoint-xl){
+    font-size: 48px;
+}
 }
 .what_get__cerd{
 @include flexCenterColumn;
@@ -80,3 +90,29 @@ line-height: 21px;
         }
     }
 }
+.what_get_image{
+    img{
+        width: calc(100% - 40px);
+        height: 381px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media screen and (min-width:$ui-breakpoint-md){
+            width: calc(100% - 60px);
+                }
+            }
+                @media screen and (min-width:$ui-breakpoint-xl){
+                    width: calc(50% - 0px);
+                    height: 487px;
+                    right: 0;
+                    bottom: 428px;
+                }
+    }
+    .what_get__wrapper-contant{
+
+        @media screen and (min-width:$ui-breakpoint-xl){
+display: flex;
+
+                }
+            }
+    
