@@ -1,0 +1,128 @@
+.about_fork {
+    background-image: url(../images/bacg__img__about-fork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    padding-bottom: 36px;
+}
+
+.about_fork__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 133.333% */
+    width: 320px;
+    height: 123px;
+    margin-bottom: 53px;
+
+    @media screen and (min-width:$ui-breakpoint-md) {
+        font-size: 44px;
+        width: 711px;
+    }
+
+    @media screen and (min-width:$ui-breakpoint-xl) {
+
+        width: 806px;
+    }
+}
+
+.about_fork_content {
+    margin-bottom: 45px;
+    width: 306px;
+display: flex;
+justify-content: start;
+align-items: center;
+    &:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    img {
+        margin-bottom: 33px;
+        width: 165px;
+        height: 43px;
+    }
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 24px;
+        /* 150% */
+
+        span {
+            display: block;
+
+            @media screen and (min-width:$ui-breakpoint-md) {
+                display: inline;
+            }
+        }
+    }
+}
+
+.about_fork_wrapper {
+    margin-bottom: 37px;
+
+    @media screen and (min-width:$ui-breakpoint-md) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width:$ui-breakpoint-md) {
+        margin-bottom: 116px;
+    }
+
+}
+
+.about_fork__text {
+    color: #A291A5;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    width: 251px;
+    height: 150px;
+    position: relative;
+&::after{
+    content: "" ;
+    display: block;
+    border-bottom: 2px solid #645766;
+    width: 251px;
+    position: absolute;
+    top: 175px;
+    left: 1px;
+    @media screen and (min-width:$ui-breakpoint-md) {
+        width: 555px;
+        top: 91px;
+        left: 73px;
+    }
+
+    @media screen and (min-width:$ui-breakpoint-xl) {
+        width: 780px;
+        top: 71px;
+        left: 73px;
+    }
+}
+    @media screen and (min-width:$ui-breakpoint-md) {
+        width: 704px;
+        height: 56px;
+    }
+
+    @media screen and (min-width:$ui-breakpoint-xl) {
+        width: 887px;
+        height: 35px;
+    }
+
+}

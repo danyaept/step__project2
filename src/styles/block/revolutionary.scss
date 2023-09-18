@@ -61,7 +61,11 @@ width: 140px;
 height: 28px;
     position: relative;
     padding: 0;
-    // padding-left: 7px;
+    // // border-top: 1px solid grey;------------------------------
+    // border-top-left-radius: 6px;
+    // border-bottom-left-radius: 6px;
+    // border-top-right-radius: 6px;
+    // border-bottom-right-radius: 6px;
     &::before{
         content: "";
         display: inline;
@@ -76,6 +80,7 @@ height: 28px;
 width: 80px;
 margin-left: 5px;
 justify-content: start;
+font-size: 12px;
 
 }
 .revolutionary__btn_div_second{
@@ -87,17 +92,11 @@ background: white;
 border-radius: 10%;
   width: 40px;
   height: 26px;
-  @include flexCenter
-    // border: 1px solid rgb(143, 137, 137);
+  @include flexCenter;
+  font-size: 12px;
+
 }
-// .revolutionary__img_content {
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// button{
-   
-// }
-// }
+
 .link_test{
     display: block;
     background-color: rgba(17, 18, 19, 0.089);

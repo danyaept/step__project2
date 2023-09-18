@@ -6,8 +6,12 @@ import cleanCSS from "gulp-clean-css";
 import clean from "gulp-clean";
 import browserSync from "browser-sync";
 import imagemin from 'gulp-imagemin';
-import dartSass from 'sass';
+// import dartSass from 'sass';
+// import gulpSass from 'gulp-sass';
+
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+
 const sass = gulpSass(dartSass);
 
 const html = () => {
