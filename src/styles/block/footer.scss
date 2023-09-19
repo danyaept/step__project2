@@ -1,141 +1,234 @@
-.footer{
+.footer {
     background-image: url(../images/footer_back_img2.png);
     background-size: cover;
     background-repeat: no-repeat;
-padding-top: 2px;
-// position: relative;
-// z-index: -2;
+    padding-top: 2px;
+    padding-bottom: 1300px;
+
 }
-.footer_title{
+
+.footer_title {
     color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 42px; /* 150% */
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
 }
-.footer__card{
+
+.footer__card {
     position: relative;
-   z-index: 1;
+    z-index: 1;
     width: 257px;
-height: 457px;
-margin-bottom: 18px;
-// opacity: 0.11;
-
-
+    height: 487px;
+    margin-bottom: 18px;
 }
-.footer__card_title{
+
+.footer__card__black {
+
+    height: 620px;
+    @media screen and (min-width:$ui-breakpoint-md) {
+        left: -24px;
+        margin: 0 20px;
+        height: 580px;
+    }
+    @media screen and (min-width:$ui-breakpoint-xl) {
+        left: 0px;
+        margin: 0 20px;
+        height: 580px;
+    }
+}
+
+.footer__card_title {
     position: relative;
     top: 0px;
     width: 257px;
-height: 97px;
-opacity: 0.06;
-background: #FFFF;
+    height: 97px;
+    opacity: 0.06;
+    background: #FFFF;
 
 }
 
-.footer__card_title__text{
-    position: absolute;
-        z-index: 2;
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; /* 100% */
-        text-transform: uppercase;
-        opacity: 1;
-top: 39px;
+.footer__wrapper {
+    @include flexCenterColumn;
+    margin-top: 32px;
+
+    @media screen and (min-width:$ui-breakpoint-md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 71px;
+        margin-top: 40px;
+
     }
-.footer__card__content{
+
+    @media screen and (min-width:$ui-breakpoint-xl) {
+        margin-top: 116px;
+        column-gap: 15px;
+        column-gap: 15px;
+    }
+
+}
+
+.footer__card_title__text {
+    position: absolute;
+    z-index: 2;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 100% */
+    text-transform: uppercase;
+    opacity: 1;
+    top: 39px;
+}
+
+.footer__card__content {
     width: 257px;
     height: 360px;
     opacity: 0.11;
-background: #FFF;
-position: relative;
-z-index: -1;
+    background: #FFF;
+    position: relative;
+    z-index: -1;
 }
-.footer__card__content-black{
+
+.footer__card__content-black {
     opacity: 0.84;
     background: #463048;
     width: 299px;
-height: 560px;
+    height: 560px;
 }
-.footer__card_title-black{
+
+.footer__card_title-black {
     opacity: 0.11;
-background: #000;
-width: 299px;
-height: 111px;
+    background: #000;
+    width: 299px;
+    height: 111px;
 }
-.footer__inside-wrapper{
+
+.footer__inside-wrapper {
     position: absolute;
     z-index: 1;
     top: 130px;
 }
-.footer__price{
-    color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 62px; 
-text-transform: uppercase;
 
-span{
+.footer__price {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;
+    text-transform: uppercase;
+
+}
+
+.footer__price-black {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.footer__price_text_after {
     margin-top: 20px;
     display: block;
     color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; 
-text-transform: uppercase;
-position: relative;
-margin-bottom: 73px;
-&::after{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 21px;
-    top: 34px;
-    border-bottom: 5px solid  #8D81AC;
-    width: 60px;
-}
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 73px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 21px;
+        top: 34px;
+        border-bottom: 5px solid #8D81AC;
+        width: 60px;
+
+    }
 
 }
-}
-.footer__card__text{
+
+.footer__card__text {
     color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; 
-margin-bottom: 50px;
-span{
-    margin-top: 9px;
-    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 50px;
+    height: 45px;
+
+    span {
+        margin-top: 9px;
+        display: block;
+    }
 }
+
+.footer__card__text-black {
+    margin-bottom: 51px;
+    @media screen and (min-width:$ui-breakpoint-md) {
+        margin-bottom: 37px;
+    }
 }
-.footer__btn{
+
+.footer__btn {
     position: relative;
 }
-.footer__card__button-text{
+
+.footer__btn-black {
+    margin-top: 80px;
+    @media screen and (min-width:$ui-breakpoint-md) {
+        margin-bottom: 37px;
+    }
+}
+
+.footer__card__button-text {
     position: absolute;
     top: 13px;
     left: 37px;
     color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 15px; /* 100% */
-text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    /* 100% */
+    text-transform: uppercase;
+}
+
+.footer__price_text_after {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 21px;
+        top: 34px;
+        border-bottom: 5px solid #8D81AC;
+        width: 60px;
+    }
 }
