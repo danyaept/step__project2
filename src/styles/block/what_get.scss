@@ -3,13 +3,13 @@
     padding-bottom: 420px;
     position: relative;
     background-color:  #F4F4F4;
-    @media screen and (min-width:$ui-breakpoint-xl){
+    @media screen and (min-width:$ui-breakpoint-md-lg){
         padding-top: 94px;
         padding-bottom: 77px;
          }
 }
 .what_get__wrapper{
-    @media screen and (min-width:$ui-breakpoint-xl){
+    @media screen and (min-width:$ui-breakpoint-md-lg){
 width: 50%;
     }
 }
@@ -19,10 +19,17 @@ font-family: Montserrat;
 font-size: 42px;
 font-style: normal;
 font-weight: 700;
-line-height: 44px; /* 104.762% */
+line-height: 44px; 
 text-align: center;
 margin-bottom: 36px;
 text-align: center;
+@media screen and (min-width:$ui-breakpoint-xs){
+    font-size: 36px;
+}
+
+@media screen and (min-width:$ui-breakpoint-md-lg){
+    font-size: 46px;
+}
 @media screen and (min-width:$ui-breakpoint-xl){
     font-size: 48px;
 }
@@ -30,9 +37,13 @@ text-align: center;
 .what_get__cerd{
 @include flexCenterColumn;
 margin-bottom: 42px;
+@media screen and (min-width:$ui-breakpoint-xs){
+    flex-direction: row;
+    align-items: flex-start;
+    }
+    
 @media screen and (min-width:$ui-breakpoint-md){
-flex-direction: row;
-align-items: flex-start;
+
 }
 @media screen and (min-width:$ui-breakpoint-xl){
 
@@ -40,32 +51,44 @@ align-items: flex-start;
 &:last-of-type{
     margin-bottom: 0;
 }
-.what_get__cerd_size_img1{
-    width: 111px;
-height: 64px;
-margin-bottom: 27px;
-}
-.what_get__cerd_size_img2{
-    width: 90px;
-    height: 80px;
+.wrapper_img{
+    width: 112px;
+    margin-right: 25px;
     margin-bottom: 27px;
 }
-.what_get__cerd_size_img3{
-    width: 60px;
-    height: 84px;
-    margin-bottom: 27px;
-}
-.what_get__cerd_size_img4{
-    width: 71px;
-    height: 71px;
-    margin-bottom: 27px;
-}
+// .what_get__cerd_size_img1{
+//     width: 111px;
+// height: 64px;
+
+// }
+// .what_get__cerd_size_img2{
+//     width: 90px;
+//     height: 80px;
+ 
+// }
+// .what_get__cerd_size_img3{
+//     width: 60px;
+//     height: 84px;
+
+// }
+// .what_get__cerd_size_img4{
+//     width: 71px;
+//     height: 71px;
+// }
 }
 .what_get__cerd__text{
     @include flexCenterColumn;
-    @media screen and (min-width:$ui-breakpoint-md){
+    
+    @media screen and (min-width:$ui-breakpoint-xs){
+        width: 410px;
         align-items: flex-start;
         justify-content: start;
+        padding-left: 10px;
+    }
+    @media screen and (min-width:$ui-breakpoint-md){
+        width: 630px;
+        // align-items: flex-start;
+        // justify-content: start;
         }
         @media screen and (min-width:$ui-breakpoint-xl){
         
@@ -90,7 +113,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 21px; 
-@media screen and (min-width:$ui-breakpoint-md){
+@media screen and (min-width:$ui-breakpoint-xs){
     text-align: start;
         }
     }
@@ -111,7 +134,7 @@ h2{
         @media screen and (min-width:$ui-breakpoint-md){
            
                 }
-                @media screen and (min-width:$ui-breakpoint-xl){
+                @media screen and (min-width:$ui-breakpoint-md-lg){
                     width: calc(50%);
                     height: 450px;
                     right: 0;
@@ -121,7 +144,7 @@ h2{
             
     }
     .what_get__wrapper-contant{
-        @media screen and (min-width:$ui-breakpoint-xl){
+        @media screen and (min-width:$ui-breakpoint-md-lg){
 display: flex;
 align-items: flex-start;
 justify-content: start;
@@ -129,7 +152,7 @@ justify-content: start;
             }
     .what_get__md-hide{
         
-        @media screen and (min-width:$ui-breakpoint-xl){
+        @media screen and (min-width:$ui-breakpoint-md-lg){
          display: none;
         }
     
@@ -137,7 +160,7 @@ justify-content: start;
     .what_get__xl-hide{
         display: none;
        
-        @media screen and (min-width:$ui-breakpoint-xl){
+        @media screen and (min-width:$ui-breakpoint-md-lg){
        display: block;
         }
     

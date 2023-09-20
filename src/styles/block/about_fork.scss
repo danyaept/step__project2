@@ -18,24 +18,38 @@
     width: 320px;
     height: 123px;
     margin-bottom: 53px;
-
+    @media screen and (min-width:$ui-breakpoint-xs) {
+        font-size: 42px;
+        width: 411px;
+    }
     @media screen and (min-width:$ui-breakpoint-md) {
         font-size: 44px;
         width: 711px;
     }
 
-    @media screen and (min-width:$ui-breakpoint-xl) {
-
+    @media screen and (min-width:$ui-breakpoint-md-lg) {
         width: 806px;
+    }
+    @media screen and (min-width:$ui-breakpoint-xl) {
+        width: 892px;
     }
 }
 
 .about_fork_content {
     margin-bottom: 45px;
-    width: 306px;
+    width: 301px;
 display: flex;
 justify-content: start;
 align-items: center;
+@media screen and (min-width:$ui-breakpoint-xs) {
+    width: 210px;
+}
+@media screen and (min-width:$ui-breakpoint-sm) {
+    width: 250px;
+}
+@media screen and (min-width:$ui-breakpoint-md) {
+    width: 306px;
+}
     &:last-of-type {
         margin-bottom: 0px;
     }
@@ -58,23 +72,26 @@ align-items: center;
 
         span {
             display: block;
-
-            @media screen and (min-width:$ui-breakpoint-md) {
+            @media screen and (min-width:$ui-breakpoint-xs) {
                 display: inline;
             }
+          
         }
     }
 }
 
 .about_fork_wrapper {
     margin-bottom: 37px;
-
-    @media screen and (min-width:$ui-breakpoint-md) {
+    @media screen and (min-width:$ui-breakpoint-xs) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+    } 
+   
+    @media screen and (min-width:$ui-breakpoint-md) {
+        margin-bottom: 35px;
     }
 
     @media screen and (min-width:$ui-breakpoint-md) {
@@ -103,17 +120,34 @@ align-items: center;
     position: absolute;
     top: 175px;
     left: 1px;
+    @media screen and (min-width:$ui-breakpoint-xs) {
+        width: 382px;
+        top: 82px;
+        left: 20px;
+    }
+    @media screen and (min-width:$ui-breakpoint-sm) {
+        width: 445px;
+        top: 82px;
+        left: 21px;
+    }
     @media screen and (min-width:$ui-breakpoint-md) {
         width: 555px;
         top: 91px;
         left: 73px;
     }
-
     @media screen and (min-width:$ui-breakpoint-xl) {
         width: 780px;
         top: 71px;
         left: 73px;
     }
+}
+@media screen and (min-width:$ui-breakpoint-xs) {
+    width: 420px;
+    height: 46px;
+}
+@media screen and (min-width:$ui-breakpoint-sm) {
+    width: 500px;
+    height: 46px;
 }
     @media screen and (min-width:$ui-breakpoint-md) {
         width: 704px;

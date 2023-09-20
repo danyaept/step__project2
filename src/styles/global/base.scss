@@ -50,16 +50,25 @@ a{
     box-sizing: border-box;
 }
 .container {
-	min-width: 320px;
-	max-width: 340px;
+	// min-width: 320px;
+	max-width: 300px;
     margin: 0 auto;
 	padding: 0 10px ;
+	@media screen and (min-width: 480px) {
+		max-width:  460px;
+	  }
+	  @media screen and (min-width: 576px) {
+		max-width:  570px;
+	  }
 	@media screen and (min-width: 768px) {
-		max-width:  780px;
+		max-width:  740px;
 		
 	  }
+	  @media screen and (min-width: 993px) {
+		max-width: 970px;
+	  }
 	  @media screen and (min-width: 1200px) {
-		max-width: 1220px;
+		max-width: 1180px;
 	  }
 	  
 }

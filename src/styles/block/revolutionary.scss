@@ -25,25 +25,38 @@ width: 276px;
 height: 74px;
 margin-bottom: 36px;
 text-align: center;
+@media screen and (min-width:$ui-breakpoint-xs){
+
+    width: 400px;
+height: 48px;
+}
+@media screen and (min-width:$ui-breakpoint-sm){
+
+    width: 489px;
+height: 58px;
+}
 @media screen and (min-width:$ui-breakpoint-md){
 
-    width: 689px;
+    width: 669px;
 height: 58px;
 }
 @media screen and (min-width:$ui-breakpoint-xl){
 
-    width: 861px;
+    width: 781px;
     height: 64px;
 }
-}
-.revolutionary__img_content{
-    @include flexCenter ;
- gap: 10px;
-  flex-wrap: wrap;
-//     @media screen and (min-width:$ui-breakpoint-md){
+span{
+    display: inline;
+    @media screen and (min-width:$ui-breakpoint-md-lg){
 
-//    flex-direction: row;
-//     }
+       display: block;
+    }
+}
+}
+.revolutionary__link_content{
+    @include flexCenter ;
+ gap: 15px;
+  flex-wrap: wrap;
 }
 .revolutionary__img__first{
     display: block;
@@ -53,55 +66,38 @@ height: 58px;
        margin-bottom: 0;
          }
 }
-.revolutionary__img__second{
-    display: block;
-}
-.revolutionary__btn{
-width: 140px;
-height: 28px;
-    position: relative;
-    padding: 0;
-    // // border-top: 1px solid grey;------------------------------
-    // border-top-left-radius: 6px;
-    // border-bottom-left-radius: 6px;
-    // border-top-right-radius: 6px;
-    // border-bottom-right-radius: 6px;
-    &::before{
-        content: "";
-        display: inline;
-        position: absolute;
-        border-left: 1px solid rgb(189, 184, 184);
-       height: 27px;
-        left: 71%;
-        z-index: 2;
-    }
-}
-.revolutionary__btn_div{
-width: 80px;
-margin-left: 5px;
-justify-content: start;
-font-size: 12px;
+.revolutionary__link__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    border: 1px solid;
+    background-color: #f6f8fa;
+     
+    border: 1px solid rgb(145, 140, 140);
+  
+     border-top-left-radius: 6px;
+     border-bottom-left-radius: 6px;
+     border-top-right-radius: 6px;
+     border-bottom-right-radius: 6px;
+     padding-left: 10px;
+     p{
+        padding: 0 10px;
+        font-size: 12px;
+        line-height: 20px;
+   
+     }
 
 }
-.revolutionary__btn_div_second{
-position: absolute;
-background: white;
-  left: 97px;
-  height: 18px;
-  border-right: 1px solid white;
-border-radius: 10%;
-  width: 40px;
-  height: 26px;
-  @include flexCenter;
-  font-size: 12px;
-
+.revolutionary__link{
+    width: 77px;
 }
-
-.link_test{
-    display: block;
-    background-color: rgba(17, 18, 19, 0.089);
-    span{
-        display: inline-block;
-        background-color: #ffff;
-    }
+.revolutionary__numbers{
+    width: 60px;
+    height: 28px;
+background-color: #fff;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+border-left: 1px solid  rgb(145, 140, 140);
 }
