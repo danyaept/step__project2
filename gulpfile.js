@@ -6,8 +6,8 @@ import cleanCSS from "gulp-clean-css";
 import clean from "gulp-clean";
 import browserSync from "browser-sync";
 import imagemin from 'gulp-imagemin';
-// import dartSass from 'sass';
-// import gulpSass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+
 
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
@@ -40,7 +40,11 @@ gulp.task("js", js)
 const css = () => {
   return gulp.src('./src/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions', {
+      cascade: false,
+    }))
     .pipe(concat('styles.css'))
+
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('./dist/styl'))
 

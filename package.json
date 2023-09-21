@@ -17,8 +17,11 @@
   },
   "homepage": "https://gitlab.com/iamstolyarovdanya/2-hw-advanced-html-and-css#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
+    "cross-env": "^6.0.3",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -28,5 +31,18 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.67.0"
   },
-  "type": "module"
+  "type": "module",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  }
 }
