@@ -56,25 +56,7 @@ margin-bottom: 42px;
     margin-right: 25px;
     margin-bottom: 27px;
 }
-// .what_get__cerd_size_img1{
-//     width: 111px;
-// height: 64px;
 
-// }
-// .what_get__cerd_size_img2{
-//     width: 90px;
-//     height: 80px;
- 
-// }
-// .what_get__cerd_size_img3{
-//     width: 60px;
-//     height: 84px;
-
-// }
-// .what_get__cerd_size_img4{
-//     width: 71px;
-//     height: 71px;
-// }
 }
 .what_get__cerd__text{
     @include flexCenterColumn;
@@ -87,8 +69,7 @@ margin-bottom: 42px;
     }
     @media screen and (min-width:$ui-breakpoint-md){
         width: 630px;
-        // align-items: flex-start;
-        // justify-content: start;
+
         }
         @media screen and (min-width:$ui-breakpoint-xl){
         
