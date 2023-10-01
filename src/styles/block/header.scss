@@ -1,21 +1,20 @@
-.header {
+.header__main__content{
   background-image: url("../images/header__back.png");
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
-
+padding-bottom: 111px;
 }
 
 
 
 
 
-.header__navbar{
+.header__nav_content{
 
-  background-color: #27262A;;
-  position: fixed;
-z-index: 7;
-
-
+  background-color: #27262A;
+  @include flexCenter ;
+justify-content: space-between;
+padding: 33px 5px;
 
 }
 
@@ -61,7 +60,7 @@ margin-top:20px ;
   font-weight: 400;
   line-height: 14px; /* 100% */
   text-transform: uppercase;
-
+}
 .blue-btn{
   border-radius: 40px;
   background: #8D81AC;
@@ -90,7 +89,7 @@ margin-top:20px ;
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 111.111% */
-  margin-top: 407px;
+  margin-top: 77px;
 }
 .header__Period-info{
   color: #848E97;
@@ -104,4 +103,25 @@ margin-top:20px ;
 }
   .header__navbar-link{
   }
+.img_none{
+  display: none;
+}
+.burger_btn{
+  background-color: #27262A;
+  border: none;
+  position: relative;
+ margin-left: 20px; 
+  width: 33px;
+height: 31px;
+}
+
+.burger_btn__img1{
+position: absolute;
+top: 3px;
+left: 4px;
+}
+.burger_btn__img2{
+  position: absolute;
+  top: 3px;
+  left: 2px;
 }
